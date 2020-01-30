@@ -1,0 +1,35 @@
+@import "~bpmn-js-properties-panel/styles/properties";
+@import "assets/bpmn-font/css/bpmn-embedded.css";
+@import "assets/bpmn-style/diagram";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.bpmn-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  &-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+}
+
+.bpp-properties-panel {
+  height: 100%;
+}
+

@@ -1,0 +1,17 @@
+<ng-container *ngIf="!errors; else elseBlock">
+  <div id="{{ CONTAINER_ID }}">
+    <div>MACARENA</div>
+  </div>
+  <div id="{{ PANEL_ID }}"></div>
+  <div id="aizona-panel">
+    <button (click)="exportDiagram()">Save diagram</button>
+  </div>
+</ng-container>
+<ng-template #elseBlock>
+  <div class="bpmn-dashboard">
+    <p class="bpmn-dashboard-title">
+      Ooops, we could not display the BPMN 2.0 diagram.
+    </p>
+    <code>{{ errors }}</code>
+  </div>
+</ng-template>

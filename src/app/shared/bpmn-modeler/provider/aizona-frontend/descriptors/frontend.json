@@ -1,0 +1,24 @@
+{
+  "name": "Frontend",
+  "prefix": "frontend",
+  "uri": "http://front.eu",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "FrontEndStartEvent",
+      "extends": [
+        "bpmn:StartEvent"
+      ],
+      "properties": [
+        {
+          "name": "Frontend",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ]
+}

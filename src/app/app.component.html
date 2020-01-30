@@ -1,0 +1,10 @@
+<az-bpmn-loader
+  *ngIf="!diagram else elseBlock"
+  (onDiagramLoad)="onDiagramLoad($event)">
+</az-bpmn-loader>
+<ng-template #elseBlock>
+  <az-bpmn-editor
+    [diagram]="diagram">
+  </az-bpmn-editor>
+</ng-template>
+

@@ -1,0 +1,10 @@
+<div class="bpmn-dashboard">
+  <p class="bpmn-dashboard-title">
+    Read BPMN diagram from your desktop to get started.
+  </p>
+  <input (change)="readBpmn($event.target.files)"
+         class="bpmn-dashboard-input"
+         type="file"
+         accept=".xml,.bpmn"
+  />
+</div>
